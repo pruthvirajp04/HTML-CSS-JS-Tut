@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: whitesmoke;
+    }
+    .paragraph {
+      padding: 12px 12px;
+      margin: 22px 1px 16px 2px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      display: flex;
+      color: whitesmoke;
+    }
+    #para {
+      display: none;
+    }
+    .buttonShow {
+      /* border: 3px solid maroon; */
+      display: flex;
+      margin: 4px 4px 4px 4px;
+      padding: 5px 5px;
+    }
+    #btn {
+      cursor: pointer;
+      width: 10%;
+      height: 33px;
+      font-size: 18px;
+      font-family: cursive;
+      border-radius: 12px;
+      background: none;
+      color: white;
+      border: 2px solid yellowgreen;
+      margin: 8px 21px 11px 137px;
+    }
+    #btn:hover {
+      color: black;
+      background-color: whitesmoke;
+    }
+  </style>
+  <body>
+    <div class="heading">
+      <h1>Let's know about the Event Listeners</h1>
+    </div>
+    <div class="paragraph">
+      <h3>
+        <p class="noShort">
+          Hello ! My name is Pruthviraj Patil , and here is something about
+          me.......
+        </p>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          excepturi dolor nam, optio, corporis aperiam quos sed modi eum labore
+          natus magnam nisi in dolore asperiores. Amet illo id architecto
+          similique assumenda. Aut et aliquam ipsa enim fugiat quasi ex
+          assumenda reprehenderit cupiditate suscipit tenetur obcaecati officiis
+          totam placeat dolores rerum soluta ad dignissimos itaque nulla,
+          quaerat cumque ut cum. Aperiam eaque error repellendus vel quidem ab,
+          minima distinctio labore asperiores. Dignissimos dolor, animi
+          molestiae nulla incidunt laudantium. Atque maxime nulla deserunt
+          voluptas sit voluptatem rem, enim explicabo dolore quod, dignissimos
+          aut aliquam! Asperiores, pariatur cumque. Commodi mollitia aliquid
+          sunt? Also the event listeners are <br />
+          click <br />
+          contextmenu mouseover/mouseout <br />
+          mousedown/mouseup <br />
+          mousemove <br />
+
+          submit <br />
+          focus <br />
+
+          DOMContentLoaded <br />
+
+          transitionend <br />
+        </p>
+      </h3>
+    </div>
+    <div class="buttonShow">
+      <button id="btn" onclick="toggleHide()">Read More</button>
+    </div>
+    <script>
+      // This is the function for hide and show text with the help of Event Listener in button.
+      function toggleHide() {
+        let btn = document.getElementById("id");
+        let para = document.getElementById("para");
+        if (para.style.display != "none") {
+        document.getElementById('btn').innerHTML = "Read";
+
+          para.style.display = "none";
+        } else {
+        document.getElementById('btn').innerHTML = "Hide";
+
+          para.style.display = "block";
+        }
+      }
+      //Now using the Event Listener of mouseover
+      // let mouseOver = document.getElementById('para');
+      // mouseOver.addEventListener('mouseover' ,function run(){alert("The mouse is inside the Paragraph");});
+      //Now using the Event Listener of mouseout 
+      // let mouseOut = document.getElementById('para');
+      // mouseOut.addEventListener('mouseout', function run(){alert("The mouse is outside the Paragraph");});
+    </script>
+  </body>
+</html>

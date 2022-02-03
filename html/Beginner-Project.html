@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doorsteppharma</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /* background-image: url('med.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%; */
+         color: blanchedalmond;
+            background-color: black;
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        
+.left {
+    position: fixed;
+    display: inline-block;
+    /* border: 2px solid rebeccapurple; */
+   
+    align-items: center;
+    padding: 12px;
+    
+    
+}
+.left img {
+    width: 90px;
+    margin-left: 36px;
+    /* align-items: center; */
+   
+}
+.mid {  
+    /* position: fixed; */
+    display: inline-block;
+    margin-left: 360px;
+    margin-top: 0px;
+    width: 47%;
+   
+    
+    /* border: 2px solid green; */
+}
+.right{
+    /* border: 2px solid rebeccapurple; */
+    /* margin:;
+     */
+     margin-top: 68px;
+     margin-bottom: 68px;
+     align-items: center;
+}
+.navbar {
+    display: inline-block;
+}
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+
+.navbar li a:hover{ text-decoration: underline;
+    color: grey;
+    
+}
+.navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+
+}
+
+.main{
+    /* border: 2px solid royalblue; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+}
+.container h1 {
+    text-align: center;
+}
+.form-group input {
+    /* background: none; */
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+footer{
+    background-color: white;
+    color: black;
+    /* padding-top: 23px; */
+}
+.center{
+    text-align: center;
+}
+.container{
+    border: 2px solid rebeccapurples;
+}
+.sub-reset{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px ;
+
+}
+
+    </style>
+</head>
+
+
+<body>
+    <!-- <div class="header"> -->
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="circle-cropped.png" alt="Logo"> <br>
+            
+            <div class="locon">
+                
+                Door Step Pharma (CEO)
+                
+            </div>
+            
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Right box for buttons -->
+        <!-- </div> -->
+        <div class="main">
+            
+            <h1>Order any medications at your Door Step</h1>
+
+        </div>
+        <div class="container">
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name *" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter your Age *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality *" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="" placeholder="Enter your Email Id *" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Phone Number *" required>
+            </div>
+            <div class="sub-reset">
+
+                <input type="submit" value="Submit" class="btn" >
+                <input type="reset" value="Reset" class="btn">
+
+            </div>
+            <!-- <button class="btn">Submit</button> -->
+        </form>
+    </div>
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+        <button class="btn">Youtube Channel</button>
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.doorsteppharma.com.All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

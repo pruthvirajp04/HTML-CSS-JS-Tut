@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Tutorial</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="head">This is the tutorial for JSON in JS</h1>
+    </div>
+    <div class="mainBox">
+      <h3 id="main">
+        What is JSON?
+
+        JSON stands for JavaScript Object Notation  <br> 
+        JSON is a lightweight data-interchange format  <br>
+        JSON is language independent  <br>
+        JSON is "self-describing" and easy to understand  <br>
+      </h3>
+    </div>
+    <script>
+        // Let's first make a object 
+        let jsonObj = {
+            name  : "Pruthviraj",
+            chestNo : "4",
+            chestAfterRec : "11 + ",
+            favColor : "Blue",
+            hobbies : "Swimming, driving , coding, playing chess, Yoga, Teaching , Working in Farms"
+        }
+        console.log(jsonObj);
+        let someStr = JSON.stringify(jsonObj);
+        console.log(someStr);
+        someStr = someStr.replace('Teaching','Freelancing');
+        let newJsonObj = JSON.parse(someStr);
+        console.log(newJsonObj);
+        let finalObj = JSON.stringify(newJsonObj);
+        console.log(finalObj);
+    </script>
+  </body>
+</html>

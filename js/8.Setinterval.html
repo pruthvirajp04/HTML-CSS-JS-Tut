@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetIntervalOut SetInterval</title>
+</head>
+<style>
+    .mainBox h3{
+        user-select: none;
+    }
+</style>
+<body>
+   <div class="heading">
+       <h1>
+           This is tutorial for SetInterval and SetIntervalOut
+       </h1>
+   </div>
+   <div class="timing">
+       <h1 id="time"></h1>
+   </div>
+   <div class="mainBox">
+       <h3>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam temporibus ex! Quas quidem magni consequuntur earum facere nesciunt, iure quaerat eius maxime sapiente qui debitis eveniet? Quae ipsa facere, nihil quod dolorem corporis doloribus pariatur sint officiis repellendus ullam repudiandae blanditiis dolorum obcaecati id! Veritatis, quae? Exercitationem, neque perferendis.
+       </h3>
+   </div>
+   <script>
+    //    function say(){
+    //        alert("It's been 4 seconds you have been on this page");
+    //    }
+    //    setTimeout(say,4000);
+    //    function sayDiff()
+    //    {
+    //        console.log("Hey! You know this is going to be in SetInterval.Excited to see!!");
+    //    }
+    //  setInterval(sayDiff,2000);
+    //  clearInterval(intervalId);
+    //Now here I'm going to put date and time live on the page
+
+
+    function displayTime(){
+        time = new Date();
+        // console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,  1000);
+       
+   </script>
+</body>
+</html>
