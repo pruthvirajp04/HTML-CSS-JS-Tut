@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Date and Time in JS</title>
+    <script src="./nine.js"></script>
     <style>
       body {
         background-color: black;
@@ -47,38 +48,6 @@
     <div class="mainBox">
       <h3 id="main">Current Time is : <span id="time"></span></h3>
     </div>
-    <script>
-      // lete t = fkdofkdfdsfmfdfsfdfokfsdfdf;
-
-      let dt = new Date();
-      console.log(dt);
-      let now = new Date(1000);
-      console.log(now);
-
-      // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
-      let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
-      console.log(newDate);
-
-      //Accessing the year and other things of date with the help of function
-      let yr = newDate.getFullYear();
-      console.log("The year is ", yr);
-
-      let dat = newDate.getDate();
-      console.log("The date is ", dat);
-
-      let month = newDate.getMonth();
-      console.log("The month is ", month);
-
-      let hours = newDate.getHours();
-      console.log("The hours is ", hours);
-    //   newDate.setDate(5);
-    //     newDate.setMinutes(43);
-    //     console.log(newDate)
-        setInterval(updateTime, 1000);
-
-        function updateTime() {
-            time.innerHTML = new Date();
-        }
-    </script>
+   
   </body>
 </html>
